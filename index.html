@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <script id="first-template" type="text/x-handlebars-template">
+        {{#each data}}
+          <div id="{{this.id}}" class="person-box">
+              <p>{{ this.name }}</p> 
+              <a href="{{ this.email }}">{{ this.email }}</a>
+          </div>
+        {{/each}}
+      </script>
+
+    <div id="container">
+        <div id="my-people">
+            <div id="my-people-text">My People</div>
+            <div id="logos">
+                <i class="fa fa-male" data-color="1"></i> -
+                <i class="fa fa-female" data-color="2"></i> -
+                <i class="fa fa-male" data-color="3"></i> -
+                <i class="fa fa-female" data-color="1"></i> -
+                <i class="fa fa-male" data-color="4"></i> -
+                <i class="fa fa-female" data-color="5"></i> -
+                <i class="fa fa-male" data-color="2"></i> -
+                <i class="fa fa-female" data-color="2"></i> -
+                <i class="fa fa-male" data-color="3"></i> -
+                <i class="fa fa-female" data-color="1"></i> -
+                <i class="fa fa-male" data-color="4"></i> -
+                <i class="fa fa-female" data-color="5"></i> -
+                <i class="fa fa-male" data-color="2"></i> - 
+                <i class="fa fa-female" data-color="2"></i> -
+                <i class="fa fa-male" data-color="3"></i> -
+                <i class="fa fa-female" data-color="1"></i> -
+                <i class="fa fa-male" data-color="4"></i> -
+                <i class="fa fa-female" data-color="5"></i> -
+                <i class="fa fa-male" data-color="2"></i> -
+                <i class="fa fa-female" data-color="1"></i> -
+                <i class="fa fa-male" data-color="4"></i> -
+                <i class="fa fa-female" data-color="5"></i> -
+                <i class="fa fa-male" data-color="2"></i> -
+                <i class="fa fa-female" data-color="1"></i> -
+                <i class="fa fa-male" data-color="4"></i> -
+                <i class="fa fa-female" data-color="5"></i> 
+            </div>
+        </div>
+        <div id="dataList"></div>
+    </div>
+
+    <script src="jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>  
+
+
+
+          <!-- <script id="animals-template" type="text/x-handlebars-template">
+        <div>
+          <ul>
+          {{#each animals}}
+            <li>{{ this }}</li>
+          {{/each}}
+          </ul>
+        </div>
+      </script> -->

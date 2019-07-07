@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+
+#container {
+    height: 100vh;
+    width: 99vw;
+    background-color: lightblue;
+    display: grid;
+    grid-template-rows: 100px auto;
+}
+
+#my-people {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 80px;
+    align-items: center;
+    background: rgb(255,255,255,0.3);
+    display: grid;
+    align-items: center;
+    grid-template-columns: fit-content(400px) auto;
+}
+
+#my-people-text {
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 10px;
+    color: gray   
+}
+
+#logos {
+    font-size: 0.35em;
+    display: inline-block;
+    padding: 10px;
+}
+
+#dataList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+i {
+    font-size: 0.4em;
+}
+
+[data-color="1"] {
+    color:  red;
+}
+
+[data-color="2"] {
+    color: darkcyan;
+}
+
+[data-color="3"] {
+    color: olive;
+}
+[data-color="4"] {
+    color: gray
+}
+
+.person-box {
+    border-bottom: 5px dotted rgb(255,255,255,0.3);
+}
+
+.person-box > p, .person-box > a {
+    background-color: rgb(255,255,255,0.1);
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    padding: 5px;
+}
